@@ -1,0 +1,39 @@
+@import url('http://fonts.cdnfonts.com/css/jelek');
+        body 
+        {
+            background-color: #ffb56cb2;
+            text-align: center;
+        }
+        #titlu
+        {
+            text-align: center;
+            color: #0080FF;
+            font-size: 70px;
+            font-family: 'Jelek', sans-serif;
+                                                
+        }
+        img
+        {
+            border-radius: 15px 50px
+        }
+        
+        table{
+            width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+        }
+        th, td {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+        #materie{
+            text-align: right;
+        }
+        #citat{
+            color: black;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        ul{
+            list-style-type: circle;
+            font-size: 24px;
+        }

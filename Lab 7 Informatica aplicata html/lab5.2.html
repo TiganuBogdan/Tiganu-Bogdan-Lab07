@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Tiganu Bogdan Florin css.css"/>
+<title>Tiganu Bogdan Florin</title>
+</head>
+<body>
+<h1 class="nume"id="nume">Nume:Tiganu</h1>
+<h1 class="prenume"id="prenume">Prenume:Bogdan Florin</h1>
+<p class="p1">E-mail: tiganu_bogdan@yahoo.com</p>
+
+<p onmouseover="arVarst()" id="varsta">2002</p>
+
+<img id="borderimg" src="Poza 1.png" alt="Poza Profil" width="300" height="300">
+<h5 id="citat">“Vrei nu vrei educatia e prim-plan"</h5>
+<button type="button" onclick="myFunction()">Alta viata</button>	
+<table id="tabel">
+    <tr id="scris">
+	<td>Analiza matematica</td> 
+	<td>Anul 1 </td>
+	<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/01.pdf">Fisa disciplinei</a></td>
+	</tr>
+	<tr id="scris">
+	<td>Dispozitive electronice</td>
+	<td>Anul 1 </td>
+	<td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/12.pdf">Fisa disciplinei</a></td>
+    </tr>
+	<tr id="scris">
+	<td>Fizica</td>
+	<td>Anul 1</td>
+	<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/03.pdf">Fisa disciplinei</a></td>
+	</tr>
+	<tr id="scris">
+	<td>Informatica aplicata</td>
+	<td>Anul 1</td>
+	<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/06.pdf">Fisa disciplinei</a></td>
+	</tr>
+	<tr id="scris"> 
+	<td>Programarea calculatoarelor si limbaje de programare</td>
+	<td>Anul 1</td>
+	<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/04.pdf">Fisa disciplinei</a></td>
+	</tr>
+</table>
+<h4>Hobby-uri:</h4>
+<ul id="lista">
+<li id="lista1">Crypto investing </li>
+<li id="lista2">Gaming </li>
+<li id="lista3">Programare </li>
+</ul>
+<script>
+function myFunction() {
+document.getElementById("nume").innerHTML = "Programator";
+document.getElementById("prenume").innerHTML="";
+document.getElementById("lista1").innerHTML =("Programator");
+document.getElementById("lista2").innerHTML =("Inginer microsisteme-Electronice");
+document.getElementById("lista3").innerHTML =("Freelancer");
+document.getElementById("borderimg").src = ("Cat.jpg");
+document.getElementById("borderimg").width = "200";
+document.getElementById("nume").style.fontStyle = "italic";
+document.getElementById("citat").style.fontStyle = "oblique";
+document.getElementById("lista1").style.fontStyle = "oblique";
+document.getElementById("lista2").style.fontStyle = "oblique";
+document.getElementById("lista3").style.fontStyle = "oblique";
+document.body.style.backgroundImage = "url('background.jfif')";
+document.getElementById("borderimg").style.opacity = "0.7";
+document.getElementById("borderimg").style.borderColor = "red";
+document.getElementById("hover").addEventListener("mouseover" , mouseOver);
+document.getElementById("hover").addEventListener("mouseout" , mouseOut);
+}
+function arVarst()
+{
+var azi = new Date;
+var varstMea;
+
+var anNasc = document.getElementById("varsta").innerHTML;
+varstMea = azi.getFullYear() - parseInt(anNasc);
+document.getElementById("varsta").innerHTML = varstMea;
+}
+</script>
+<style>
+li{
+border-style: solid;
+border-width: 5px;
+}
+img{
+border: 5px solid #555;
+}
+</style>
+</body>
+</html>
